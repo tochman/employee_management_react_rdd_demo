@@ -1,9 +1,13 @@
 import React from 'react';
+import EmployeeList from './components/EmployeeList'
 
 function App() {
   return (
     <>
-      <h1>Employee list</h1>
+      <section name="header">Employee list</section>
+      <section name="list">
+        <EmployeeList />
+      </section>
     </>
   );
 }
