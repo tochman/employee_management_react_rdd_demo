@@ -23,6 +23,6 @@ describe('<EmployeeList />', () => {
 
     const describedComponent = mount(<EmployeeList />)
     await describedComponent.setState({employees: employees.data})
-    expect(describedComponent.find('li')).toHaveLength(4)
+    expect(describedComponent.find('div[role="listitem"]')).toHaveLength(4)
   });
 });
